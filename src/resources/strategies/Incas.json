@@ -1,0 +1,66 @@
+{
+	"description": "Incas are a versatile civilization with strong military units and unique economic bonuses.",
+	"specialty": "infantry",
+	"dark_age": [
+		"Start with 4 villagers and a llama.",
+		"Build 2 houses, a mill near berries, and a mining camp near a gold mine.",
+		"Train additional villagers from the town center.",
+		"Research loom.",
+		"Build a barracks and train 3-4 militia.",
+		"Use the llama to scout the map and find resources.",
+		"Advance to Feudal Age at around 10-12 minutes with 500 food and 200 gold.",
+		"Have around 600-800 food, 100-150 wood, and 50-100 gold at the end of the Dark Age.",
+		"Assign 6-7 villagers to food, 3-4 to wood, and 1-2 to gold and stone."
+	],
+	"feudal_age": [
+		"Build a blacksmith and market to upgrade infantry and sell excess resources for gold.",
+		"Build additional houses and train more villagers.",
+		"Build a second barracks and continue producing infantry units.",
+		"Advance to Castle Age at around 20-22 minutes with 800 food and 400 gold.",
+		"Have around 1200-1500 food, 400-500 wood, 200-300 gold, and 150-200 stone at the end of the Feudal Age.",
+		"Assign 10-12 villagers to food, 5-6 to wood, 2-3 to gold, and 3-4 to stone."
+	],
+	"castle_age": [
+		"Build a siege workshop and start producing siege units.",
+		"Build a monastery and start training monks.",
+		"Research the unique technology, Andean Sling, for improved skirms and sling units performance.",
+		"Build a second town center and start training villagers.",
+		"Advance to Imperial Age at around 30-32 minutes with 1000 food, 1000 gold, and 800 stone.",
+		"Have around 2500-3000 food, 1000-1200 wood, 800-1000 gold, and 600-800 stone at the end of the Castle Age.",
+		"Assign 20-25 villagers to food, 10-12 to wood, 8-10 to gold, and 12-15 to stone."
+	],
+	"imperial_age": [
+		"Train kamayuks and eagles as main infantry and raiding units.",
+		"Use siege units and monks to destroy buildings and convert enemy units.",
+		"Research the unique technology, Fabric Shields, for improved kamayuk performance.",
+		"Have a mix of farms, llama, and fishing ships for food, and gather enough wood, gold, and stone to support your army production.",
+		"Assign 40-50 villagers to food, 20-25 to wood, 16-20 to gold, and 25-30 to stone."
+	],
+	"thresh_holds": {
+		"villagers": {
+			"dark_age": 20,
+			"feudal_age": 30,
+			"castle_age": 40
+		},
+		"food": {
+			"dark_age": 800,
+			"feudal_age": 1750,
+			"castle_age": 4000
+		},
+		"wood": {
+			"dark_age": 200,
+			"feudal_age": 700,
+			"castle_age": 2500
+		},
+		"gold": {
+			"dark_age": 250,
+			"feudal_age": 1000,
+			"castle_age": 1500
+		},
+		"stone": {
+			"dark_age": 0,
+			"feudal_age": 800,
+			"castle_age": 1000
+		}
+	}
+}

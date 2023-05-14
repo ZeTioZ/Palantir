@@ -1,0 +1,63 @@
+{
+	"description": "Aztecs are an infantry-focused civilization that excels in early aggression and fast attacks.",
+	"specialty": "infantry",
+	"dark_age": [
+		"Start with 4 villagers and a scout.",
+		"Build 2 houses, a dock near fish, and a lumber camp near forests.",
+		"Train additional villagers from the town center.",
+		"Research loom.",
+		"Train 5-6 militia from the barracks.",
+		"Use the scout to explore the map and find resources.",
+		"Advance to Feudal Age at around 21-22 minutes with 500 food and 200 gold.",
+		"Have around 800-1000 food, 150-200 wood, and 200-300 gold at the end of the Dark Age.",
+		"Assign 4-5 villagers to food, 2-3 to wood, 1-2 to gold, and 3-4 to stone."
+	],
+	"feudal_age": [
+		"Build additional barracks and continue producing infantry units.",
+		"Build a market and blacksmith to upgrade infantry and sell excess resources for gold.",
+		"Advance to Castle Age at around 28-29 minutes with 800 food and 400 gold.",
+		"Have around 1500-2000 food, 600-800 wood, 500-600 gold, and 400-500 stone at the end of the Feudal Age.",
+		"Assign 8-10 villagers to food, 5-6 to wood, 3-4 to gold, and 6-7 to stone."
+	],
+	"castle_age": [
+		"Build a monastery and start training monks.",
+		"Research the unique technology, Atlatl, for improved skirms and spearman performance.",
+		"Build a second town center and start training villagers.",
+		"Advance to Imperial Age at around 36-37 minutes with 1000 food, 1000 gold, and 800 stone.",
+		"Have around 3500-4000 food, 2000-2500 wood, 1200-1500 gold, and 1200-1500 stone at the end of the Castle Age.",
+		"Assign 20-25 villagers to food, 10-12 to wood, 8-10 to gold, and 12-15 to stone."
+	],
+	"imperial_age": [
+		"Train jaguar warriors and research Garland Wars for improved infantry performance.",
+		"Use monks to convert enemy units and siege units to destroy buildings.",
+		"Research the unique technology, El Dorado, for improved eagle warrior performance.",
+		"Assign 40-50 villagers to food, 20-25 to wood, 16-20 to gold, and 25-30 to stone."
+	],
+	"thresh_holds": {
+		"villagers": {
+			"dark_age": 20,
+			"feudal_age": 30,
+			"castle_age": 50
+		},
+		"food": {
+			"dark_age": 1000,
+			"feudal_age": 2000,
+			"castle_age": 4000
+		},
+		"wood": {
+			"dark_age": 300,
+			"feudal_age": 800,
+			"castle_age": 2500
+		},
+		"gold": {
+			"dark_age": 200,
+			"feudal_age": 600,
+			"castle_age": 1500
+		},
+		"stone": {
+			"dark_age": 0,
+			"feudal_age": 400,
+			"castle_age": 800
+		}
+	}
+}

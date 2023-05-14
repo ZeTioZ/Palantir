@@ -1,0 +1,66 @@
+{
+	"description": "Vikings are a versatile civilization that excels in naval warfare, infantry, and economy.",
+	"specialty": "naval_warfare",
+	"dark_age": [
+		"Start with 3 villagers and a scout.",
+		"Build 2 houses, a dock near fish if possible, and a lumber camp near forests.",
+		"Train additional villagers from the town center.",
+		"Research loom.",
+		"Train 4-5 militia from the barracks.",
+		"Use the scout to explore the map and find resources.",
+		"Advance to Feudal Age at around 16-17 minutes with 500 food and 200 gold.",
+		"Have around 800-1000 food, 150-200 wood, and 150-200 gold at the end of the Dark Age.",
+		"Assign 4-5 villagers to food, 2-3 to wood, 1-2 to gold, and 3-4 to stone."
+	],
+	"feudal_age": [
+		"Build additional fishing ships and start producing galleys from the dock.",
+		"Build a blacksmith and a market to upgrade units and sell excess resources for gold.",
+		"Build a second lumber camp near forests and start producing axemen from the barracks.",
+		"Advance to Castle Age at around 23-24 minutes with 800 food and 400 gold.",
+		"Have around 1500-2000 food, 600-800 wood, 500-600 gold, and 400-500 stone at the end of the Feudal Age.",
+		"Assign 8-10 villagers to food, 5-6 to wood, 3-4 to gold, and 6-7 to stone."
+	],
+	"castle_age": [
+		"Continue producing galleys and research War Galley upgrade.",
+		"Build a second dock and produce more galleys.",
+		"Research Hand Cart and Wheelbarrow at the town center to improve economy.",
+		"Build a siege workshop and start producing battering rams and mangonels.",
+		"Advance to Imperial Age at around 30-31 minutes with 1000 food, 1000 gold, and 800 stone.",
+		"Have around 3500-4000 food, 2000-2500 wood, 1200-1500 gold, and 1200-1500 stone at the end of the Castle Age.",
+		"Assign 20-25 villagers to food, 10-12 to wood, 8-10 to gold, and 12-15 to stone."
+	],
+	"imperial_age": [
+		"Continue producing galleys and research Elite Berserk upgrade.",
+		"Use Berserks to raid enemy economy and destroy buildings.",
+		"Build a castle to protect important areas and produce unique unit - Longboat.",
+		"Have around 5000-6000 food, 3000-4000 wood, and 3000-4000 gold in the late Imperial Age.",
+		"Assign 40-50 villagers to food, 20-25 to wood, 16-20 to gold, and 25-30 to stone."
+	],
+	"thresh_holds": {
+		"villagers": {
+			"dark_age": 20,
+			"feudal_age": 30,
+			"castle_age": 40
+		},
+		"food": {
+			"dark_age": 800,
+			"feudal_age": 1750,
+			"castle_age": 3500
+		},
+		"wood": {
+			"dark_age": 200,
+			"feudal_age": 700,
+			"castle_age": 2000
+		},
+		"gold": {
+			"dark_age": 250,
+			"feudal_age": 1000,
+			"castle_age": 1300
+		},
+		"stone": {
+			"dark_age": 0,
+			"feudal_age": 800,
+			"castle_age": 1300
+		}
+	}
+}

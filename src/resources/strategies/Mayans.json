@@ -1,0 +1,64 @@
+{
+	"description": "Mayans are an archery-focused civilization with strong economy bonuses and unique unit, the Plumed Archer.",
+	"specialty": "archery",
+	"dark_age": [
+		"Start with 4 villagers and a scout.",
+		"Build 2 houses, a mill near berries, and a lumber camp near forests.",
+		"Train additional villagers from the town center.",
+		"Research loom.",
+		"Train 3-4 militia from the barracks and use them to defend against early enemy attacks.",
+		"Use remaining resources to train additional villagers.",
+		"Advance to Feudal Age at around 21-22 minutes with 500 food and 200 gold.",
+		"Have around 1200-1400 food, 100-150 wood, and 100-150 gold at the end of the Dark Age.",
+		"Assign 6-7 villagers to food, 4-5 to wood, 1-2 to gold, and 2-3 to stone."
+	],
+	"feudal_age": [
+		"Build additional archery ranges and start producing archers and skirmishers.",
+		"Research feudal age upgrades for archers and blacksmith upgrades for infantry and cavalry.",
+		"Build a blacksmith and market to upgrade units and sell excess resources for gold.",
+		"Advance to Castle Age at around 27-28 minutes with 800 food and 400 gold.",
+		"Have around 2000-2500 food, 600-800 wood, 400-500 gold, and 200-250 stone at the end of the Feudal Age.",
+		"Assign 10-12 villagers to food, 8-9 to wood, 2-3 to gold, and 3-4 to stone."
+	],
+	"castle_age": [
+		"Continue producing archers and skirmishers and upgrade them with castle age upgrades.",
+		"Build a monastery and start producing monks to convert enemy units.",
+		"Build defensive structures such as walls and towers to protect your base.",
+		"Advance to Imperial Age at around 35-36 minutes with 1000 food, 1000 gold, and 800 stone.",
+		"Have around 4000-4500 food, 2000-2500 wood, 1500-2000 gold, and 1000-1200 stone at the end of the Castle Age.",
+		"Assign 25-30 villagers to food, 20-22 to wood, 4-5 to gold, and 8-10 to stone."
+	],
+	"imperial_age": [
+		"Continue producing archers and skirmishers, and start producing Plumed Archers.",
+		"Upgrade archers and Plumed Archers with unique technologies for increased range and attack.",
+		"Use monks and defensive structures to defend against enemy attacks.",
+		"Assign 50-60 villagers to food, 40-45 to wood, 8-10 to gold, and 16-20 to stone."
+	],
+	"thresh_holds": {
+		"villagers": {
+			"dark_age": 20,
+			"feudal_age": 30,
+			"castle_age": 40
+		},
+		"food": {
+			"dark_age": 800,
+			"feudal_age": 1750,
+			"castle_age": 4000
+		},
+		"wood": {
+			"dark_age": 200,
+			"feudal_age": 700,
+			"castle_age": 2500
+		},
+		"gold": {
+			"dark_age": 250,
+			"feudal_age": 1000,
+			"castle_age": 1500
+		},
+		"stone": {
+			"dark_age": 0,
+			"feudal_age": 800,
+			"castle_age": 1000
+		}
+	}
+}

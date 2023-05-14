@@ -1,0 +1,109 @@
+% Numéro du rapport
+\newcommand{\reportNum}{}
+
+% HRef Color Setup
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue
+}
+
+% Chemin des images
+\graphicspath{ {./Images/} }
+
+% Pages des problèmes
+\newcommand{\challenge}[1]{\input{#1}\newpage}
+
+% En-tête/pied de page
+\pagestyle{fancy}
+\fancyhf{}
+
+% En-tête
+\fancyhead[R]{Palantir}
+
+% Pied de page
+\fancyfoot[L]{\textcolor{gray}{\leftmark}}
+\fancyfoot[R]{\textcolor{gray}{\thepage}}
+\renewcommand{\footrulewidth}{0.5pt}
+
+% Taille de l'entête
+\setlength{\headheight}{39.5pt}
+
+%indentation avant chaque paragraphe
+\setlength{\parindent}{0pt}
+
+% Points à la place des tirets pour les listes
+% \renewcommand{\labelitemi}{\textbullet}
+
+% % Set-up pour le code
+% \lstdefinestyle{pythonBase}{
+%   belowcaptionskip=1\baselineskip,
+%   breaklines=true,
+%   escapeinside=``,
+%   frame=L,
+%   xleftmargin=\parindent,
+%   language=python,
+%   showstringspaces=false,
+%   basicstyle=\footnotesize\ttfamily,
+%   keywordstyle=\bfseries\color{green!40!black},
+%   commentstyle=\itshape\color{purple!40!black},
+%   identifierstyle=\color{blue},
+%   stringstyle=\color{orange},
+% }
+% \lstset{style=pythonBase}
+
+% Formatage simple pour un code inline
+\newcommand{\code}[1]{\mbox{\texttt{\textit{#1}}}}
+%\newcommand{\codered}[1]{\mbox{\texttt{\textit{\textcolor{BrickRed}{#1}}}}}
+
+% Colors
+\definecolor{darkWhite}{rgb}{0.94,0.94,0.94}
+\definecolor{LightGray}{gray}{0.9}
+
+% Minted Setup
+\setminted{autogobble, bgcolor=LightGray, breaklines}
+\setminted[Python]{linenos, frame=lines, framesep=2mm}
+
+% customFrame
+\tcbuselibrary{listings,skins,breakable}
+
+% \newtcblisting{customFrame}{
+%     arc=0mm,
+%     top=0mm,
+%     bottom=0mm,
+%     left=3mm,
+%     right=0mm,
+%     width=\textwidth,
+%     listing only,
+%     listing options={style=frameStyle},
+%     breakable
+% }
+
+%\lstset{
+%    backgroundcolor=\color{darkWhite},
+%    breakatwhitespace=false,
+%    breaklines=true,
+%    captionpos=b,
+%    commentstyle=\color{red},
+%    deletekeywords={...},
+%    escapeinside={\%*}{*)},
+%    extendedchars=true,
+%    keepspaces=true,
+%    keywordstyle=\color{blue},
+%    language=C,
+%    morekeywords={*,...},
+%    showspaces=false,
+%    showstringspaces=false,
+%    showtabs=false,
+%    stepnumber=1,
+%    stringstyle=\color{gray},
+%    tabsize=4,
+%    title=\lstname,
+%}
+
+%\lstdefinestyle{frameStyle}{
+%    basicstyle=\footnotesize,
+%    numbers=left,
+%    numbersep=20pt,
+%    numberstyle=\tiny\color{black}
+%}

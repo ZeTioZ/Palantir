@@ -1,0 +1,64 @@
+{
+	"description": "Chinese are a versatile civilization with a focus on strong economy and powerful archers.",
+	"specialty": "economy",
+	"dark_age": [
+		"Start with 6 villagers and a scout.",
+		"Build 2 houses, a lumber camp near forests, and a dock near fish.",
+		"Train additional villagers from the town center.",
+		"Research loom.",
+		"Train 3 militia or archers from the archery range or barracks.",
+		"Use the scout to explore the map and find resources.",
+		"Advance to Feudal Age at around 20-22 minutes with 500 food and 200 gold.",
+		"Assign 4-5 villagers to food, 2-3 to wood, and 1-2 to gold."
+	],
+	"feudal_age": [
+		"Build additional archery ranges and continue producing archers.",
+		"Build a blacksmith to upgrade archers and a market to sell excess resources for gold.",
+		"Build a second lumber camp or mining camp as needed.",
+		"Advance to Castle Age at around 27-29 minutes with 800 food and 200 gold.",
+		"Assign 8-10 villagers to food, 5-6 to wood, 3-4 to gold, and 2-3 to stone."
+	],
+	"castle_age": [
+		"Build additional archery ranges or stables and continue producing units.",
+		"Research the unique technology, Great Wall, for improved walls and towers.",
+		"Build a second town center and start training villagers.",
+		"Advance to Imperial Age at around 34-36 minutes with 1000 food and 800 gold.",
+		"Assign 20-25 villagers to food, 10-12 to wood, 8-10 to gold, and 4-5 to stone."
+	],
+	"imperial_age": [
+		"Train powerful chu ko nu archers and research the unique technology, Rocketry, for improved archer performance.",
+		"Build trebuchets and siege units to destroy buildings.",
+		"Use monks to convert enemy units or heal friendly units.",
+		"Assign additional villagers to gold and stone as needed.",
+		"Build multiple castles to produce unique unit, the Chu Ko Nu.",
+		"Have a strong economy with plenty of resources to support army production and research.",
+		"Assign villagers as needed to maintain resource balance and continue army production."
+	],
+	"thresh_holds": {
+		"villagers": {
+			"dark_age": 20,
+			"feudal_age": 30,
+			"castle_age": 40
+		},
+		"food": {
+			"dark_age": 800,
+			"feudal_age": 1750,
+			"castle_age": 3500
+		},
+		"wood": {
+			"dark_age": 200,
+			"feudal_age": 700,
+			"castle_age": 2000
+		},
+		"gold": {
+			"dark_age": 250,
+			"feudal_age": 1000,
+			"castle_age": 1300
+		},
+		"stone": {
+			"dark_age": 0,
+			"feudal_age": 800,
+			"castle_age": 1300
+		}
+	}
+}

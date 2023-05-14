@@ -1,0 +1,64 @@
+{
+	"description": "Dravidians are an archer and elephant civilization that excels in late-game battles.",
+	"specialty": "infantry",
+	"dark_age": [
+		"Start with 3 villagers and a scout.",
+		"Build 2 houses, a lumber camp near forests, and a dock near fish.",
+		"Train additional villagers from the town center.",
+		"Research loom.",
+		"Train 4-5 militia from the barracks.",
+		"Use the scout to explore the map and find resources.",
+		"Advance to Feudal Age at around 16-17 minutes with 500 food and 200 gold.",
+		"Have around 800-1000 food, 150-200 wood, and 150-200 gold at the end of the Dark Age.",
+		"Assign 4-5 villagers to food, 2-3 to wood, 1-2 to gold, and 3-4 to stone."
+	],
+	"feudal_age": [
+		"Build additional fishing ships and start producing archers from the archery range.",
+		"Build a market and blacksmith to upgrade archer units and sell excess resources for gold.",
+		"Advance to Castle Age at around 23-24 minutes with 800 food and 400 gold.",
+		"Have around 1500-2000 food, 600-800 wood, 500-600 gold, and 400-500 stone at the end of the Feudal Age.",
+		"Assign 8-10 villagers to food, 5-6 to wood, 3-4 to gold, and 6-7 to stone."
+	],
+	"castle_age": [
+		"Continue producing archers and research Crossbow upgrade.",
+		"Build a monastery and start producing monks to heal and convert enemy units.",
+		"Build a siege workshop and produce siege weapons to destroy buildings and enemy units.",
+		"Advance to Imperial Age at around 30-31 minutes with 1000 food, 1000 gold, and 800 stone.",
+		"Have around 3500-4000 food, 2000-2500 wood, 1200-1500 gold, and 1200-1500 stone at the end of the Castle Age.",
+		"Assign 20-25 villagers to food, 10-12 to wood, 8-10 to gold, and 12-15 to stone."
+	],
+	"imperial_age": [
+		"Continue producing archers and research Elite Elephant Archers upgrade.",
+		"Use Elephant Archers to destroy buildings and enemy units.",
+		"Have around 5000-6000 food, 3000-4000 wood, and 3000-4000 gold in the late Imperial Age.",
+		"Assign 40-50 villagers to food, 20-25 to wood, 16-20 to gold, and 25-30 to stone."
+	],
+	"thresh_holds": {
+		"villagers": {
+			"dark_age": 22,
+			"feudal_age": 30,
+			"castle_age": 40
+		},
+		"food": {
+			"dark_age": 500,
+			"feudal_age": 800,
+			"castle_age": 1200
+		},
+		"wood": {
+			"dark_age": 150,
+			"feudal_age": 500,
+			"castle_age": 1000
+		},
+		"gold": {
+			"dark_age": 250,
+			"feudal_age": 800,
+			"castle_age": 1000
+		},
+		"stone": {
+			"dark_age": 0,
+			"feudal_age": 300,
+			"castle_age": 800
+		}
+	}
+
+}

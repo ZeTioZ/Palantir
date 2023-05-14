@@ -1,0 +1,42 @@
+\fancyhead[L]{Guide Utilisateur}
+\fancyhead[C]{Fichiers de configuration}
+
+\label{sec:configfiles}
+\section{Fichiers de configuration}
+
+Palantir offre un système de fichiers de configuration qui vous permettra de créer vos propre stratégie et de les suivre en jeu grâce à l'\hyperref[sec:overlays]{\textbf{\textit{overlay}}}.
+
+\subsection{Structure des fichiers de configuration}
+Chaque fichier de configuration est propre à une civilisation. À l'heure actuelle, il n'est possible d'avoir qu'un seul fichier de configuration pour chacune des civilisations. Dans de prochaines mise à jour, la possibilité de choisir un fichier parmi plusieurs pour une même civilisation sera ajoutée.
+\\
+La structure du fichier est simple à comprendre et se présente de la façon suivante:
+\begin{minted}{TEXT}
+{
+    "description": "Brève description de la civilisation avec ses points forts/négatifs."
+    "speciality": "Spécialité d'une civilisation."
+    "dark_age": [
+        "Page 1 de la stratégie pour l'âge sombre.",
+        "Page 2 de la stratégie pour l'âge sombre."
+    ]
+    "feudal_age": [...]
+    "castel_age": [...]
+    "imperial_age": [...]
+    "thresh_holds": {
+        "villagers": {
+            "dark_age": Recommandé pour l'âge sombre
+            "feudal_age": Recommandé pour l'âge feudal
+            "castle_age": Recommandé pour l'âge des chateaux
+        }
+        "food": {
+            "dark_age": Recommandé pour passer à l'âge feudal
+            "feudal_age": Recommandé pour passer à l'âge des chateaux
+            "castle_age": Recommandé pour passer à l'âge impérial
+        }
+        "wood": {...}
+        "gold": {...}
+        "stone": {...}
+    }
+}
+\end{minted}
+
+Il est à noté que le nom du fichier doit être le nom \textbf{exact} (majuscule comprise) de la civilisation à lequel il appartient. Par exemple, un fichier de configuration pour la civilisation des Azetcs serait "Aztecs.json".

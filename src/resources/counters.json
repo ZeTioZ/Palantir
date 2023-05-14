@@ -1,0 +1,273 @@
+{
+	"Aztecs": {
+		"counters": [
+			"Byzantines",
+			"Goths"
+		]
+	},
+	"Bengalis": {
+		"counters": [
+			"Japanese",
+			"Koreans"
+		]
+	},
+	"Berbers": {
+		"counters": [
+			"Byzantines",
+			"Vietnamese"
+		]
+	},
+	"Bohemians": {
+		"counters": [
+			"Byzantines",
+			"Teutons",
+			"Malians"
+		]
+	},
+	"Britons": {
+		"counters": [
+			"Mongols",
+			"Celts"
+		]
+	},
+	"Bulgarians": {
+		"counters": [
+			"Byzantines",
+			"Mongols"
+		]
+	},
+	"Burgundians": {
+		"counters": [
+			"Teutons",
+			"Khmer"
+		]
+	},
+	"Burmese": {
+		"counters": [
+			"Malians",
+			"Khmer"
+		]
+	},
+	"Byzantines": {
+		"counters": [
+			"Goths",
+			"Teutons"
+		]
+	},
+	"Celts": {
+		"counters": [
+			"Teutons",
+			"Huns"
+		]
+	},
+	"Chinese": {
+		"counters": [
+			"Huns",
+			"Mongols"
+		]
+	},
+	"Cumans": {
+		"counters": [
+			"Vietnamese",
+			"Khmer"
+		]
+	},
+	"Dravidians": {
+		"counters": [
+			"Mongols",
+			"Malay"
+		]
+	},
+	"Ethiopians": {
+		"counters": [
+			"Mongols",
+			"Teutons"
+		]
+	},
+	"Franks": {
+		"counters": [
+			"Byzantines",
+			"Persians"
+		]
+	},
+	"Goths": {
+		"counters": [
+			"Mongols",
+			"Celts"
+		]
+	},
+	"Gurjaras": {
+		"counters": [
+			"Ethiopians",
+			"Malians"
+		]
+	},
+	"Hindustanis": {
+		"counters": [
+			"Byzantines",
+			"Khmer"
+		]
+	},
+	"Huns": {
+		"counters": [
+			"Aztecs",
+			"Byzantines",
+			"Chinese",
+			"Koreans"
+		]
+	},
+	"Italians": {
+		"counters": [
+			"Spanish",
+			"Saracens",
+			"Goths"
+		]
+	},
+	"Incas": {
+		"counters": [
+			"Mayans",
+			"Britons",
+			"Spanish"
+		]
+	},
+	"Japanese": {
+		"counters": [
+			"Aztecs",
+			"Britons",
+			"Goths"
+		]
+	},
+	"Khmer": {
+		"counters": [
+			"Burmese",
+			"Vietnamese"
+		]
+	},
+	"Koreans": {
+		"counters": [
+			"Aztecs",
+			"Franks",
+			"Mongols"
+		]
+	},
+	"Lithuanians": {
+		"counters": [
+			"Byzantines",
+			"Goths",
+			"Teutons"
+		]
+	},
+	"Magyars": {
+		"counters": [
+			"Slavs",
+			"Britons",
+			"Aztecs"
+		]
+	},
+	"Malay": {
+		"counters": [
+			"Italians",
+			"Japanese"
+		]
+	},
+	"Malians": {
+		"counters": [
+			"Ethiopians",
+			"Teutons"
+		]
+	},
+	"Mayans": {
+		"counters": [
+			"Aztecs",
+			"Incas"
+		]
+	},
+	"Mongols": {
+		"counters": [
+			"Byzantines",
+			"Teutons"
+		]
+	},
+	"Persians": {
+		"counters": [
+			"Britons",
+			"Chinese",
+			"Spanish"
+		]
+	},
+	"Poles": {
+		"counters": [
+			"Teutons",
+			"Lithuanians"
+		]
+	},
+	"Portuguese": {
+		"counters": [
+			"Malians",
+			"Ethiopians"
+		]
+	},
+	"Saracens": {
+		"counters": [
+			"Franks"
+		]
+	},
+	"Sicilians": {
+		"counters": [
+			"Teutons",
+			"Byzantines"
+		]
+	},
+	"Slavs": {
+		"counters": [
+			"Teutons",
+			"Byzantines",
+			"Mongols"
+		]
+	},
+	"Spanish": {
+		"counters": [
+			"Britons",
+			"Chinese",
+			"Persians"
+		]
+	},
+	"Tatars": {
+		"counters": [
+			"Teutons",
+			"Vietnamese"
+		]
+	},
+	"Teutons": {
+		"counters": [
+			"Huns",
+			"Saracens",
+			"Mongols",
+			"Turks",
+			"Byzantines",
+			"Goths",
+			"Franks",
+			"Persians",
+			"Spanish"
+		]
+	},
+	"Turks": {
+		"counters": [
+			"Britons"
+		]
+	},
+	"Vietnamese": {
+		"counters": [
+			"Goths",
+			"Aztecs",
+			"Mayans"
+		]
+	},
+	"Vikings": {
+		"specialty": "naval_warfare",
+		"counters": [
+			"Huns",
+			"Japanese"
+		]
+	}
+}

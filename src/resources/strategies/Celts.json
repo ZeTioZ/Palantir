@@ -1,0 +1,64 @@
+{
+	"description": "Celts are a versatile civilization that excels in infantry and siege warfare, with a focus on wood gathering and economy.",
+	"specialty": "infantry",
+	"dark_age": [
+		"Start with 6 villagers and a scout.",
+		"Build 2 houses, a mill near berries, and a barracks near forests.",
+		"Train additional villagers from the town center.",
+		"Research loom.",
+		"Train 3-4 militia from the barracks.",
+		"Use the scout to explore the map and find resources.",
+		"Advance to Feudal Age at around 21-22 minutes with 500 food and 200 gold.",
+		"Have around 800-1000 food, 400-500 wood, and 50-100 gold at the end of the Dark Age.",
+		"Assign 6-7 villagers to food, 6-7 to wood, 1-2 to gold, and 1-2 to stone."
+	],
+	"feudal_age": [
+		"Build additional barracks and continue producing infantry units.",
+		"Build a blacksmith and market to upgrade infantry and sell excess resources for gold.",
+		"Build a stable and train scouts if necessary.",
+		"Advance to Castle Age at around 28-29 minutes with 800 food and 400 gold.",
+		"Have around 1500-2000 food, 1000-1200 wood, 500-600 gold, and 200-300 stone at the end of the Feudal Age.",
+		"Assign 12-14 villagers to food, 10-12 to wood, 3-4 to gold, and 3-4 to stone."
+	],
+	"castle_age": [
+		"Build a siege workshop and start producing siege weapons.",
+		"Build a monastery and start training monks.",
+		"Research the unique technology, Stronghold, for improved castles.",
+		"Advance to Imperial Age at around 36-37 minutes with 1000 food, 1000 gold, and 800 stone.",
+		"Have around 3500-4000 food, 2500-3000 wood, 1000-1200 gold, and 800-1000 stone at the end of the Castle Age.",
+		"Assign 22-25 villagers to food, 20-22 to wood, 5-6 to gold, and 5-6 to stone."
+	],
+	"imperial_age": [
+		"Train woad raiders and siege weapons for a powerful army composition.",
+		"Research the unique technology, Furor Celtica, for improved infantry speed and attack.",
+		"Use monks to convert enemy units and siege units to destroy buildings.",
+		"Assign 40-45 villagers to food, 30-35 to wood, 10-12 to gold, and 10-12 to stone."
+	],
+	"thresh_holds": {
+		"villagers": {
+			"dark_age": 20,
+			"feudal_age": 30,
+			"castle_age": 40
+		},
+		"food": {
+			"dark_age": 800,
+			"feudal_age": 1750,
+			"castle_age": 3500
+		},
+		"wood": {
+			"dark_age": 200,
+			"feudal_age": 700,
+			"castle_age": 2000
+		},
+		"gold": {
+			"dark_age": 250,
+			"feudal_age": 1000,
+			"castle_age": 1300
+		},
+		"stone": {
+			"dark_age": 0,
+			"feudal_age": 800,
+			"castle_age": 1300
+		}
+	}
+}
