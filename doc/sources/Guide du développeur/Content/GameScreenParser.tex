@@ -1,0 +1,47 @@
+\fancyhead[L]{Guide du développeur}
+\fancyhead[C]{Parseur de texte sur image}
+
+\section{Parseur d'écrans de jeu}
+\subsection{Fonction "is\_on\_team\_selection\_screen"}
+Cette fonction, vous permet de savoir si vous êtes actuellement sur l'écran de sélection des équipes sous forme d'un booléen.
+Exemple d'utilisation:
+
+\begin{minted}{python}
+is_on_team_selection_screen = is_on_team_selection_screen()
+if is_on_team_selection_screen:
+    print("You're on the team selection screen!")
+\end{minted}
+
+\subsection{Fonction "is\_on\_civilization\_selection\_screen"}
+Cette fonction, vous permet de savoir si vous êtes actuellement sur l'écran de sélection des civilisation (sous menu du sélecteur d'équipe) sous forme d'un booléen.
+Exemple d'utilisation:
+
+\begin{minted}{python}
+is_on_civilization_selection_screen = is_on_civilization_selection_screen()
+if is_on_civilization_selection_screen:
+    print("You're on the civlisation selection screen!")
+\end{minted}
+
+\subsection{Fonction "is\_on\_game\_start\_screen"}
+Cette fonction, vous permet de savoir si vous êtes actuellement sur l'écran de chargement de la partie sous forme d'un booléen.\\
+\\/!\textbackslash Cette fonction utilise de la reconnaissance d'image pour fonctionner. L'image utilisée est la suivante: "./resources/images/game\_start\_splash.png" /!\textbackslash \\
+Exemple d'utilisation:
+
+\begin{minted}{python}
+is_on_game_start_screen = is_on_game_start_screen()
+if is_on_game_start_screen:
+    print("You're on the game start screen!")
+\end{minted}
+
+\newpage
+
+\subsection{Fonction "is\_on\_in\_game\_screen"}
+Cette fonction, vous permet de savoir si vous êtes actuellement sur l'écran de chargement de la partie sous forme d'un booléen.
+\\/!\textbackslash Cette fonction utilise de la reconnaissance d'image pour fonctionner. Les images utilisées sont les suivants: "./resources/images/in\_game\_template\_[0-1].png" /!\textbackslash \\\\
+Exemple d'utilisation:
+
+\begin{minted}{python}
+is_on_in_game_screen = is_on_in_game_screen()
+if is_on_in_game_screen:
+    print("You're in game!")
+\end{minted}

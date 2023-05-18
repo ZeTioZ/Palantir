@@ -1,0 +1,28 @@
+\fancyhead[L]{Guide du développeur}
+\fancyhead[C]{Parseur de données}
+
+\section{Parseur de données JSON}
+\subsection{Fonction "parse\_strategy\_from\_json\_file"}
+Cette fonction prenant en argument le chemin d'accès de votre fichier "counters.json" sert à parser le dictionnaire de contre sous format "JSON". Grâce à cela, il sera plus aisé de manipuler la donnée plus tard dans d'autres fonctions de parsing. Par défaut, le chemin d'accès se trouve à la racine du dossier "resources" projet.\\
+Exemple d'utilisation:
+
+\begin{minted}{python}
+my_counter_dictionary = parse_strategy_from_json_file("path/to/my/counters.json")
+\end{minted}
+
+\subsection{Fonction "get\_civilization\_counters"}
+Cette fonction prenant en paramètre le nom de la civilisation, permet de récupérer la liste des civilisations qui contre la civilisation donnée.\\
+Exemple d'utilisation:
+\begin{minted}{python}
+civ_counters = get_civilization_counters("Aztecs")
+for counter in civ_counters:
+    print(f"{counter} counters the Aztecs civilization! You should use it to win against them!")
+\end{minted}
+
+\subsection{Fonction "get\_civilization\_strategy"}
+Cette fonction prenant en paramètre le nom de la civilisation, permet de récupérer sous forme de dictionnaire la stratégie de la civilisation entrée. Le chemin d'accès par défaut pour un fichier de stratégie se trouvant dans le dossier "strategies" à la racine du dossier "resources" du projet.
+Exemple d'utilisation:
+\begin{minted}{python}
+aztecs_strategy = get_civilization_strategy("Aztecs")
+aztecs_strategy_dark_age = aztecs_strategy["dark_age"]
+\end{minted}

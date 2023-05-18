@@ -1,0 +1,29 @@
+\fancyhead[L]{Guide du développeur}
+\fancyhead[C]{Système de frames}
+
+\section{Système de frames}
+\subsection{Les frames et leurs sous-frames}
+wxPython nous laisse créer des "Frames" qui sont rien d'autre que des fenêtre auquels nous pouvont leur donner des attributs et des formes différentes pour qu'elles s'affichent sur l'écran. Dans notre cas, nous utilisons le système de frames et de sous frames pour contenir chaque frame derrière celle principale. Cette approche a le mérite de faire en sorte que lorsque la main frame est fermée, toutes les sous frames se ferment automatimquement ainsi que les threads allant avec.
+
+\subsection{Mises à jour des frames}
+Comme tout UI, les frames doivent se mettre à jour lorsque les informations à afficher changent. La main frame a un timer qu'on utilisera comme "Master Timer" qui va définir l'horloge des autres frames. Ce timer s'éxécutera toutes les 20 millisecondes et est injecté directement dans l'update des sous frames, un peu comme dans un observer pattern.\\
+
+Dans la fonction constructrice de ces frames, vous y retrouverez tout le code relatif à wxPython pour fixer la mise en page et les attributs de nos frames. Celle-ci sont ici indiquées comme transparente (changement de l'opacité pour voir au travers), ainsi que transparente aux clics (possibilité de cliquer au travers de l'overlay là où il n'y a pas de boutons).
+
+Dans la fonction "update", vous y trouverez toute la logique de mise à jour de la frame en question qui s'exécutera donc toutes les 20 millisecondes lorsque la main frame fera son tour d'horloge et qu'elle appellera cette même fonction pour chaque frame \textbf{visible}.
+
+Pour plus d'informations sur ce que certains fonctions font, vous pouvez regarder aux chapitres précédents concernant l'API qui est utilisée pour dans les fonctions "update".
+
+\subsection{Émulateur de clavier virtuel}
+Palantir va devoir émuler un clavier virtuel pour enregistrer vos clics de souris sur le jeu. En effet, le jeu étant sous DirectX, les clics ne sont pas lu par l'API de windows, mais bien par l'API interne de DirectX. Grâce à la librairie "pywin32", nous pouvons faire semblant que notre programme est un HID et ainsi capturer les clics en lisant les appels à l'API de DirectX lorsque des clics sur le jeu sont réalisés.\\
+
+\newpage
+
+De ce fait, dans le fichier "key\_press\_thread.py", vous y trouverez une implémentation de détection de clic souris dans la région d'un de nos boutons de notre overlay. Pour lancer cet émulateur, il suffit de lancer un thread \textbf{non bloquant} à la l'instantiation de la frame de l'overlay comme fait pour la frame "in\_game\_screen\_frame". Lors de la creation de votre thread, il vous faudra renseigner la frame associées et il faudra bien enregistrer les boutons et leur fonction d'activation dans un dictionnaire nomé "buttons". Vous avez un exemple encore une fois dans "in\_game\_screen\_frame". Cela permettra de lier un bouton avec une fonction que le thread activera si la souris se trouve dans la région du bouton.
+
+\subsection{Fermeture et désactivation automatique des frames}
+La main frame ayant 2 timers, l'un pour l'update et la désactivation automatique des frames (toutes les 20 millisecondes), l'autre est pour la fermeture automatique de Palantir (s'active toutes les secondes).\\
+
+La désactivation automatique des frames s'opère dés lors que le jeu n'est plus en avant plan. Il permet ainsi de naviquer sur l'ordinateur sans avoir l'overlay toujours ouvert sur d'autres applications. Nous utilisons ici le module "pywin32" qui nous permet de voir quelle application est en avant plan.\\
+
+La fermeture automatique des frames est vérifiée toutes les secondes par une deuxième horloge qui elle appelle un thread du fichier "auto\_close\_thread.py" vérifiant que le processus du jeu soit encore en cours, autrement, Palantir se ferme automatiquement.

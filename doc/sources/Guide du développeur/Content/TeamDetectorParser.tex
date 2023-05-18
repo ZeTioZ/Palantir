@@ -1,0 +1,52 @@
+\fancyhead[L]{Guide du développeur}
+\fancyhead[C]{Parseur de texte sur image}
+
+\section{Parseur de choix de civilisation}
+\subsection{Fonction "get\_menu\_teams"}
+Cette fonction, vous permet de récupérer durant la sélection des équipes, les équipes adverses. Une équipe en Random, sera bien notée Random, la liste peut donc contenir des doublons.
+
+\begin{minted}{python}
+get_menu_teams = get_menu_teams()
+for (index, team) in get_menu_teams:
+    print(f"Player {(index + 1)} selected the {team} civilisation")
+\end{minted}
+
+\subsection{Fonction "get\_player\_team\_in\_game"}
+Cette fonction, vous permet de récupérer la civilisation que vous jouez en pleine partie grâce à son emblème (par exemple si l'overlay est lancé en pleine partie et non à partir du sélecteur d'équipes).\\/!\textbackslash Cette fonction utilise de la reconnaissance d'image pour fonctionner. Les images utilisées sont dans le dossier suivant: "./resources/images/emblems" /!\textbackslash\\
+Exemple d'utilisation:
+
+\begin{minted}{python}
+get_player_team_in_game = get_player_team_in_game()
+if get_player_team_in_game == "Azetcs":
+    print("You're playing Aztecs civilization!")
+\end{minted}
+
+\subsection{Fonction "get\_players\_amount"}
+Cette fonction, vous permet de récupérer le nombre de joueur qu'il y a dans la partie. La détection se fait à partir de l'écran de choix des équipes. Ce chiffre est notamment utile pour calculer l'offset de cropping pour la détection des équipes dans l'écran de chargement.
+Exemple d'utilisation:
+
+\begin{minted}{python}
+get_players_amount = get_players_amount()
+if get_players_amount > 4:
+    print("You should play on a medium sized map!")
+\end{minted}
+
+\subsection{Fonction "get\_counters"}
+Cette fonction, vous permet de récupérer dans un dictionnaire tout les contres de chaque civilisation. Le format du dictionnaire est le suivant: {civilisation:[contres]}.
+Exemple d'utilisation:
+
+\begin{minted}{python}
+get_counters = get_counters()
+print(f"The Aztecs have {len(get_counters["Aztecs"])} counters which are:")
+for (index, aztecs_counter) in get_counters["Aztecs"]:
+    print(f"{index}. {aztecs_counter}")
+\end{minted}
+
+\subsection{Fonction "get\_best\_pick"}
+Cette fonction, vous permet de récupérer la civilisation qui représente le meilleur contre pour les civilisations ennemies lues dans l'écran de sélection des équipes. Cela permet au joueur de pouvoir choisir cette civilisation pour obtenir un avantage de choix d'équipe dés le début de la partie.
+Exemple d'utilisation:
+
+\begin{minted}{python}
+get_best_pick = get_best_pick()
+print(f"Le meilleur contre que vous pourriez jouer pour la sélection ennemie actuelle est {get_best_pick}")
+\end{minted}
