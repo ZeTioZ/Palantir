@@ -52,8 +52,8 @@ The overlay will display a step to step guide to help you win the game with the 
 - Click "OK" three times.
 
 ### How to run the executable file?
-- [Download the binary files from the release page](https://github.com/UNamurCSFaculty/2223_INFOB318_Palantir/releases)
-- Extract the files
+- Open the "bin" folder from the repository
+- Extract the files of "Palantir.zip"
 - Run the executable file named Palantir.exe
 - (Optional) Create a shortcut of the executable file and move it to the desktop
 - Enjoy
