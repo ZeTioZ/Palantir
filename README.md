@@ -12,7 +12,7 @@ It uses image recognition and optical character recognition to read the game inf
 The overlay will display a step to step guide to help you win the game with the best strategy and civilization.
 
 ## Installation
-- Clone the repository by running the following command in a console: `git clone https://github.com/UNamurCSFaculty/2223_INFOB318_Palantir.git`
+- Clone the repository by running the following command in a console: `git clone https://github.com/ZeTioZ/Palantir.git`
 - Run a console in the root folder
 - Install the requirements with `pip install -r ./resources/requirements.txt`
 - Run the palantir_main.py file from the src folder
